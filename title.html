@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-logo">
+            <img src="logo.png" alt="">
+            <h1>Регистрация</h1>
+        </div>
+        <div class="container-form">
+            <form>
+                <label for="name">Имя</label>
+                <input type="text" placeholder="Введите имя" name="name" required>
+                <br>
+                <label for="lastname">Фамилия</label><br>
+                <input type="text" placeholder="Введите фамилию" name="lastname" required>
+                <br>
+                <label for="sex">Ваш пол</label><br>
+                <select name="sex" required>
+                    <option value="">Ваш пол</option>
+                    <option value="man">Мужской</option>
+                    <option value="woman">Женский</option>
+                </select><br>
+                <label for="birthday">Дата рождения</label><br>
+                <input type="date" name="birthday" required><br>
+                <label for="city">Место жительства</label><br>
+                <select name="city" required>
+                    <option value="">Выберите город</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Другой">Другой</option>
+                </select>
+                <button>Зарегистрироваться</button>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
