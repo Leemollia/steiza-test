@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(223, 255, 248);
+    padding: 10px 4vw;
+    width: 100%;
+}
+
+.header__avatar img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.header__username {
+    padding: 0 10px;
+}
+
+.main__sidebar {
+    position: fixed;
+    z-index: 3;
+    height: 100%;
+    max-width: 200px;
+    background-color: rgb(223, 255, 248);
+    color: white;
+}
+
+.main__sidebar a {
+    display: block;
+    color: black;
+    padding: 8px;
+    margin: 8px;
+    text-decoration: none;
+}
+
+.main__sidebar a:hover {
+    background-color: rgb(159, 255, 242);
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    padding-left: 110px;
+    background-color: rgb(232, 255, 249);
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.chart h2 {
+    margin: 10px;
+}
+
+.google-chart {
+    width: 400px;
+    height: 200px;
+}
+
+@media screen and (max-width: 520px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__sidebar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        z-index: 0;
+        height: 50px;
+        max-width: none;
+        width: 100%;
+        background-color: rgb(223, 255, 248);
+        color: white;
+    }
+    
+    .main__sidebar a {
+        color: black;
+        font-size: 10px;
+        padding: 8px;
+        margin: 0;
+        text-decoration: none;
+    }
+    
+    .main__sidebar a:hover {
+        background-color: rgb(159, 255, 242);
+    }
+    
+    .main__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        font-size: 20px;
+        padding-left: 0;
+        background-color: rgb(232, 255, 249);
+    }
+
+    .main__content h1 {
+        font-size: 1rem;
+    }
+    
+    .chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .chart h2 {
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+    
+    .google-chart {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .google-chart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        height: 200px;
+    }
+}

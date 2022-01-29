@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon-admin.svg">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__avatar">
+                <img src="icon-admin.svg" alt="">
+            </div>
+            <div class="header__username">
+                <span>Admin</span>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__sidebar">
+                <a href="#firstchart">График №1</a>
+                <a href="#secondchart">График №2</a>
+                <a href="#thirdchart">График №3</a>
+                <a href="#fourthchart">График №4</a>
+                <a href="#fifthchart">График №5</a>
+            </div>
+            <div class="main__content">
+                <h1>Варианты графиков</h1>
+                <div class="chart">
+                    <h2 id="firstchart">График №1</h2>
+                    <div class="google-chart" id="chart-id">
+                        <script src="https://www.gstatic.com/charts/loader.js">
+                        </script>
+                    </divcla>
+                </div>
+                <div class="chart">
+                    <h2 id="secondchart">График №2</h2>
+                    <div class="google-chart" id="chart-id1">
+                        <script src="https://www.gstatic.com/charts/loader.js">
+                        </script>
+                    </div>
+                </div>
+                <div class="chart">
+                    <h2 id="thirdchart">График №3</h2>
+                    <div class="google-chart" id="chart-id2">
+                        <script src="https://www.gstatic.com/charts/loader.js">
+                        </script>
+                    </div>
+                </div>
+                <div class="chart">
+                    <h2 id="fourthchart">График №4</h2>
+                    <div class="google-chart" id="chart-id3">
+                        <script src="https://www.gstatic.com/charts/loader.js">
+                        </script>
+                    </div>
+                </div>
+                <div class="chart">
+                    <h2 id="fifthchart">График №5</h2>
+                    <div class="google-chart" id="chart-id4">
+                        <script src="https://www.gstatic.com/charts/loader.js">
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+</body>
+
+</html>
